@@ -37,6 +37,39 @@ The app was built by scraping and AI-analyzing 100 of Justin's Shorts to extract
 
 ---
 
+## AI Upsell Opportunity
+
+The base app is a daily fact product that drives viewers back to Justin's Shorts. The AI layer should be a premium add-on that makes the fact archive interactive, educational, and more shareable.
+
+Possible AI premium features:
+
+| Feature | Description |
+|---|---|
+| **Ask the Fact Vault** | Ask questions across Justin's approved fact database and get source-backed answers |
+| **Explain This Fact** | AI expands a short fact into background, why it matters, and related facts |
+| **Daily Curiosity Briefing** | Personalized facts by interest: history, animals, science, food, weird facts, sports, etc. |
+| **Trivia Mode** | AI turns facts into quizzes, streaks, and challenge questions |
+| **Fact Collections** | AI groups facts into themed packs for learning and sharing |
+| **Creator Pipeline Copilot** | Helps process more Shorts, extract facts, categorize topics, and suggest titles/CTAs |
+
+Suggested upsell path:
+
+```text
+Free: Daily fact, random fact, source link, sharing
+Plus: Personalized curiosity feed, explain-this-fact, unlimited saved facts
+Pro: Ask the Fact Vault, trivia mode, themed collections
+Creator/Partner: AI extraction pipeline, categorization, CTA optimization, analytics
+```
+
+Guardrails:
+
+- AI answers should be grounded in approved facts and source Shorts.
+- AI should not invent new facts and attribute them to Justin.
+- The UI should separate original facts from AI-generated explanations.
+- Any voice, likeness, or persona-style AI feature should require authorization.
+
+---
+
 ## Tech Stack
 
 | Layer | Technology |
@@ -157,6 +190,7 @@ See [ideas.md](ideas.md) for the full list of planned features. Key near-term go
 - Weekly automated scraping of new Shorts as Justin posts them
 - Email and push notification opt-in for the daily fact
 - Merch store integration when Justin launches merchandise
+- AI upsell layer: Ask-the-Fact-Vault, explain-this-fact, trivia mode, and personalized curiosity briefings
 
 ---
 
