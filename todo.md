@@ -38,3 +38,7 @@
 
 ## Repository Delivery
 - [x] Synchronize the complete application source and repository metadata to `rblake2320/justin-did-you-know1`, then verify its GitHub contents
+
+## Quality Hardening
+- [x] Resolve the framework type-check error in `server/_core/storageProxy.ts` and verify `pnpm check` passes
+- [x] Replace the test's sandbox-only seed-data file dependency with a repository-contained fixture

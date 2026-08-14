@@ -155,9 +155,9 @@ describe("Facts tRPC router procedures", () => {
     }
   });
 
-  it("seed data: clean_facts.json contains 76 facts with required fields", async () => {
+  it("seed data: the repository fixture contains 76 facts with required fields", async () => {
     const { readFileSync } = await import("fs");
-    const raw = readFileSync("/home/ubuntu/justin-facts/clean_facts.json", "utf-8");
+    const raw = readFileSync(new URL("../data/facts.json", import.meta.url), "utf-8");
     const facts = JSON.parse(raw);
     expect(facts.length).toBe(76);
     for (const fact of facts) {

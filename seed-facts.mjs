@@ -9,11 +9,10 @@ dotenv.config();
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const FACTS_FILE = "/home/ubuntu/justin-facts/clean_facts.json";
+const FACTS_FILE = join(__dirname, "data", "facts.json");
 
 async function seed() {
   const connection = await mysql.createConnection(process.env.DATABASE_URL);
-  const db = drizzle(connection);
 
   console.log("Reading facts from", FACTS_FILE);
   const raw = readFileSync(FACTS_FILE, "utf-8");
